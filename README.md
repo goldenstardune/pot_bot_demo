@@ -6,7 +6,7 @@ Bot z pełną rejestracją, CAPTCHA, anti-spam i bezpieczną bazą danych.
 - Rejestracja użytkowników (imię, nazwisko, numer telefonu);
 - Działający system przeciw spamu;
 - Weryfikacja CAPTCHA podczas rejestracji;
-- Interakcja z bazą danych (SQLite/PostgreSQL).
+- Interakcja z bazą danych (SQLite).
 
 ## Uruchomienie
 pip install -r requirements.txt
