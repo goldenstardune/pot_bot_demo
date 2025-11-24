@@ -1,27 +1,17 @@
-from app.database.models import async_session
-from app.database.models import User
 from sqlalchemy import select
+from .models import async_session, User
 
-async def set_user(tg_id: int) -> None:
+async def get_user(tg_id: int) -> User | None:
     async with async_session() as session:
-        user = await session.scalar(select(User).where(User.tg_id == tg_id))
-        if not user:
-            session.add(User(tg_id=tg_id, first_name="", second_name="", number=""))
-            await session.commit()
+        result = await session.execute(select(User).where(User.tg_id == tg_id))
+        return result.scalar_one_or_none()
 
-async def save_user_data(tg_id: int, first_name: str, second_name: str, number: str) -> None:
+async def create_or_update_user(tg_id: int, **kwargs):
     async with async_session() as session:
-        user = await session.scalar(select(User).where(User.tg_id == tg_id))
+        user = await get_user(tg_id)
         if not user:
-            user = User(
-                tg_id=tg_id,
-                first_name=first_name,
-                second_name=second_name,
-                number=number
-            )
+            user = User(tg_id=tg_id)
             session.add(user)
-        else:
-            user.first_name = first_name
-            user.second_name = second_name
-            user.number = number
+        for key, value in kwargs.items():
+            setattr(user, key, value)
         await session.commit()
