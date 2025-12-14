@@ -8,7 +8,7 @@ def generate_captcha(tg_id: int) -> Tuple[str, int]:
     a = random.randint(10, 50)
     b = random.randint(10, 50)
     answer = a + b
-    question = f"Prove you're not a robot:\n{a} + {b} = ?"
+    question = f"Udowodnij, że nie jesteś robotem:\n{a} + {b} = ?"
     
     _captcha_storage[tg_id] = answer
     return question, answer
