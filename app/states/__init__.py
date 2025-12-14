@@ -1,4 +1,3 @@
-from .database.models import async_session
-from .handlers import router
+from .register_states import RegisterStates
 
-__all__ = ["router", "async_session"]
+__all__ = ["RegisterStates"]
