@@ -1,0 +1,353 @@
+[
+  {
+    "question": "Które zdanie najlepiej opisuje cyberbezpieczeństwo?",
+    "options": {
+      "a": "Ochrona danych osobowych w systemach chmurowych.",
+      "b": "Ochrona sieci, urządzeń, danych przed atakami i nieautoryzowanym dostępem.",
+      "c": "Audyt zabezpieczeń infrastruktury krytycznej."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Czym różni się cyberbezpieczeństwo od bezpieczeństwa informacji?",
+    "options": {
+      "a": "Gdy cyberbezpieczeństwo dba o cyfrę, bezpieczeństwo informacji o całość (papier, cyfra etc.).",
+      "b": "Bezpieczeństwo informacji starsze, teraz Cyberbezpieczeństwo.",
+      "c": "Cyberbezpieczeństwo: tylko wirusy. Bezpieczeństwo informacji: szersze."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Co oznacza zasada \"integralności danych\" w cyberbezpieczeństwie?",
+    "options": {
+      "a": "Dane są dostępne tylko dla autoryzowanych użytkowników.",
+      "b": "Dane są kompletne, dokładne i niezmienione.",
+      "c": "Dane są przechowywane w wielu lokalizacjach."
+    },
+    "correct": "b"
+  },
+  {
+	  "question": "Które z poniższych jest przykładem ransomware?",
+    "options": {
+      "a": "Oprogramowanie szpiegujące zbierające dane użytkownika.",
+      "b": "Atak blokujący dostęp do danych/systemu, żądający okupu.",
+      "c": "Wirus komputerowy rozprzestrzeniający się przez sieć."
+    },
+	  "correct": "b"
+  },
+  {
+    "question": "Co jest główną cechą ataku Man-in-the-Middle (MitM)?",
+    "options": {
+      "a": "Podszycie się dla dostępu do systemu.",
+      "b": "Atakujący przechwytuje i modyfikuje komunikację 2 stron bez ich wiedzy.",
+      "c": "Zalewanie serwera zapytaniami w celu jego przeciążenia."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Która z poniższych technik jest najczęściej używana w atakach phishingowych?",
+    "options": {
+      "a": "Wykorzystanie luk w zabezpieczeniach systemu operacyjnego.",
+      "b": "Fałszywe e-maile/wiadomości od zaufanych, w celu wyłudzenia danych.",
+      "c": "Bezpośrednie włamanie do sieci firmowej."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Który z poniższych jest pierwszym etapem zarządzania incydentami?",
+    "options": {
+      "a": "Identyfikacja.",
+      "b": "Przygotowanie.",
+      "c": "Odzyskiwanie systemu po incydencie."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Jaka jest główna różnica między szyfrowaniem symetrycznym a asymetrycznym?",
+    "options": {
+      "a": "Symetryczne: szybkie, Asymetryczne: bezpieczne.",
+      "b": "Symetryczne do autoryzacji, asymetryczne do uwierzytelniania.",
+      "c": "Symetryczne: 1 klucz. Asymetryczne: 2 klucze (publ./pryw.)."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Który mechanizm bezpieczeństwa jest powszechnie stosowany w systemach operacyjnych do kontroli dostępu do zasobów?",
+    "options": {
+      "a": "System detekcji intruzów (IDS).",
+      "b": "Kontrola dostępu oparta na rolach (RBAC).",
+      "c": "Zapora sieciowa (firewall)."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Do czego najczęściej używane są funkcje skrótu w cyberbezpieczeństwie?",
+    "options": {
+      "a": "Do weryfikacji integralności danych i przechowywania haseł.",
+      "b": "Do szyfrowania danych przechowywanych na dysku.",
+      "c": "Do generowania kluczy szyfrujących."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Który rodzaj zapory sieciowej działa na poziomie aplikacji, analizując ruch w kontekście protokołów aplikacyjnych?",
+    "options": {
+      "a": "Zapora warstwy aplikacji (Application Firewall).",
+      "b": "Zapora proxy (Application-Level Gateway).",
+      "c": "Web Application Firewall (WAF)."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Która z poniższych metod jest skutecznym sposobem na ochronę przed atakami DDoS?",
+    "options": {
+      "a": "Instalacja programu antywirusowego na wszystkich serwerach.",
+      "b": "Rozproszenie infrastruktury sieciowej i użycie usług filtrujących ruch.",
+      "c": "Zwiększenie przepustowości łącza internetowego."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co jest kluczowym elementem ochrony infrastruktury krytycznej?",
+    "options": {
+      "a": "Pełne bezpieczeństwo: fizyka, cybernetyka, operacje, redundancja, BCP.",
+      "b": "Pełne bezpieczeństwo: fizyka, cybernetyka, operacje, redundancja, open source.",
+      "c": "Pełne bezpieczeństwo: cyber., fizyczne, zarządzanie ryzykiem i ciągłość operacji."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Jaka jest główna różnica między IDS (Intrusion Detection System) a IPS (Intrusion Prevention System)?",
+    "options": {
+      "a": "IDS działa w chmurze, a IPS w sieci lokalnej.",
+      "b": "IDS i IPS to synonimy, oznaczające to samo urządzenie.",
+      "c": "IDS tylko wykrywa ataki, a IPS potrafi je zablokować."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "W modelu współodpowiedzialności w chmurze, za co odpowiada dostawca usług chmurowych (np. AWS, Azure)?",
+    "options": {
+      "a": "Za ochronę danych klienta w każdym aspekcie.",
+      "b": "Za bezpieczeństwo \"chmury\" (np. infrastruktury fizycznej, sieci, wirtualizacji).",
+      "c": "Za konfigurację aplikacji i danych klienta."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co jest głównym celem zarządzania tożsamością i dostępem (IAM)?",
+    "options": {
+      "a": "Monitorowanie ruchu sieciowego w czasie rzeczywistym.",
+      "b": "Dostęp dla właściwych osób do właściwych zasobów, w odpowiednim czasie i celu.",
+      "c": "Szyfrowanie wszystkich danych przechowywanych w organizacji."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co według OWASP Top 10 jest jednym z najgroźniejszych zagrożeń dla aplikacji webowych?",
+    "options": {
+      "a": "Wstrzykiwanie kodu (Injection), np. SQL Injection.",
+      "b": "Problemy z wydajnością serwera baz danych.",
+      "c": "Niezgodność ze standardami HTML/CSS."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Które z poniższych stanowi dylemat etyczny podczas wykonywania testów penetracyjnych?",
+    "options": {
+      "a": "Zbyt długi czas trwania testu.",
+      "b": "Brak wyraźnej zgody właściciela systemu na przeprowadzenie testu.",
+      "c": "Stosowanie licencjonowanego oprogramowania do testów."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Która regulacja prawna ma kluczowe znaczenie dla ochrony danych osobowych w Unii Europejskiej, w tym w Polsce?",
+    "options": {
+      "a": "Ustawa o świadczeniu usług drogą elektroniczną.",
+      "b": "Ogólne Rozporządzenie o Ochronie Danych (RODO/GDPR).",
+      "c": "Ustawa o Krajowym Systemie Cyberbezpieczeństwa."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Której metody testów penetracyjnych używa się, gdy pentester posiada pełną wiedzę o testowanym systemie (dokumentacja, kody źródłowe, architektura)?",
+    "options": {
+      "a": "Black Box",
+      "b": "Grey Box",
+      "c": "White Box"
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Co jest kluczowym elementem analizy ryzyka, oprócz identyfikacji zagrożeń i podatności?",
+    "options": {
+      "a": "Tworzenie szczegółowych diagramów sieciowych.",
+      "b": "Ocena zagrożeń: szansa wystąpienia i skutki.",
+      "c": "Codzienne monitorowanie aktywności pracowników."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Które z poniższych jest kluczowym wyzwaniem w ochronie danych na urządzeniach mobilnych?",
+    "options": {
+      "a": "Wysoki koszt zakupu smartfonów.",
+      "b": "Brak możliwości instalowania oprogramowania antywirusowego.",
+      "c": "Utrata/kradzież urządzenia i złośliwe aplikacje."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Jakie zagrożenie jest szczególnie istotne w kontekście urządzeń IoT?",
+    "options": {
+      "a": "Nadmierne zużycie energii przez urządzenia.",
+      "b": "Integracja trudna przez brak stand. protokołów.",
+      "c": "Fabryczne luki i brak aktualizacji firmware'u."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Który algorytm jest przykładem szyfrowania symetrycznego?",
+    "options": {
+      "a": "RSA",
+      "b": "AES",
+      "c": "ElGamal"
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co jest typowym pierwszym etapem w większości ataków na systemy teleinformatyczne?",
+    "options": {
+      "a": "Faza eksploatacji (wykorzystanie luki).",
+      "b": "Faza rozpoznania i zbierania informacji o celu.",
+      "c": "Faza utrzymywania dostępu."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "W jakim celu techniki inżynierii wstecznej są wykorzystywane w cyberbezpieczeństwie?",
+    "options": {
+      "a": "Tworzenia nowych, złośliwych programów.",
+      "b": "Analiza malware, wykrywanie luk, audyt kodu.",
+      "c": "Dekompilacji kodu w celu usunięcia licencji."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Do czego służą protokoły SSL/TLS w kontekście bezpieczeństwa sieci?",
+    "options": {
+      "a": "Zwiększa prędkość przesyłu danych w sieci.",
+      "b": "Tworzy wirtualne sieci prywatne (VPN).",
+      "c": "Szyfruje i uwierzytelnia komunikację serwer-klient, zapewnia poufność/integralność danych."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Jaka ogólna kategoria uwierzytelniania wymaga co najmniej dwóch niezależnych czynników?",
+    "options": {
+      "a": "Uwierzytelnianie dwuskładnikowe (2FA).",
+      "b": "Uwierzytelnianie wieloskładnikowe (MFA).",
+      "c": "Uwierzytelnianie biometryczne."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Jakie narzędzie jest powszechnie używane do przechwytywania i analizy pakietów sieciowych w celu wykrycia nietypowej aktywności?",
+    "options": {
+      "a": "Program antywirusowy(np. Windows Defender).",
+      "b": "Sniffer pakietów (np. Wireshark).",
+      "c": "Narzędzie do zarządzania hasłami (np. 1Password)"
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Jak sztuczna inteligencja (AI) może wspierać cyberobronę?",
+    "options": {
+      "a": "Boty fizycznie usuwają malware z dysków.",
+      "b": "Identyfikacja anomalii, wykrywanie zagrożeń, automatyczne reakcje.",
+      "c": "Negocjacje i psychologiczna presja na hakerów, by zakończyli atak."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co jest kluczową strategią zapobiegania atakom na systemy?",
+    "options": {
+      "a": "LPM (Least Privilege), aktualizacje, treningi dla zespołu.",
+      "b": "Ignorowanie najnowszych zagrożeń, skupiając się na starych.",
+      "c": "Używanie tylko jednego, bardzo silnego hasła do wszystkich systemów."
+    },
+    "correct": "a"
+  },
+  {
+    "question": "Które z poniższych jest najskuteczniejszą formą ochrony przed ransomware?",
+    "options": {
+      "a": "Regularne przeglądanie skrzynki e-mail pod kątem spamu.",
+      "b": "Posiadanie offline/niezmienialnych, aktualnych backupów danych.",
+      "c": "Korzystanie z publicznych sieci Wi-Fi."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Co jest głównym celem informatyki śledczej?",
+    "options": {
+      "a": "Tworzenie nowych programów.",
+      "b": "Dowody cyfrowe: gromadzenie, analiza, prezentacja (zgodnie z prawem).",
+      "c": "Odzyskiwanie utraconych danych z uszkodzonych dysków."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Czym charakteryzuje się robak komputerowy?",
+    "options": {
+      "a": "Potrzebuje hosta, aby się rozprzestrzeniać i zmieniać programy.",
+      "b": "Samoreplikacja i rozprzestrzenianie w sieci, bez akcji użytkownika.",
+      "c": "Udaje przydatne oprogramowanie, ale w tle wykonuje szkodliwe działania."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Jaka metoda szyfrowania jest obecnie uważana za najbezpieczniejszą dla sieci Wi-Fi?",
+    "options": {
+      "a": "WEP",
+      "b": "WPA",
+      "c": "WPA3"
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Co to jest \"pretexting\" w kontekście socjotechniki?",
+    "options": {
+      "a": "Wysyłanie e-maili z załącznikami zawierającymi złośliwe oprogramowanie.",
+      "b": "Fizyczne wkroczenie na teren firmy w celu kradzieży danych.",
+      "c": "Tworzenie fałszywego scenariusza lub pretekstu w celu wyłudzenia informacji."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Jaka jest główna funkcja systemu SIEM (Security Information and Event Management)?",
+    "options": {
+      "a": "Tworzenie kopii zapasowych i odzyskiwanie po awarii (DR/backup).",
+      "b": "Zbieranie, analiza logów/zdarzeń w real-time, wykrywanie zagrożeń.",
+      "c": "Odizolowane środowisko do analizy malware bez ryzyka dla systemu."
+    },
+    "correct": "b"
+  },
+  {
+    "question": "Która usługa w chmurze daje klientowi największą kontrolę nad bezpieczeństwem, ale też największą odpowiedzialność?",
+    "options": {
+      "a": "Software as a Service (SaaS).",
+      "b": "Platform as a Service (PaaS).",
+      "c": "Infrastructure as a Service (IaaS)."
+    },
+    "correct": "c"
+  },
+  {
+    "question": "Co to jest \"piaskownica\" (sandbox) w kontekście analizy złośliwego oprogramowania?",
+    "options": {
+      "a": "Fizyczny magazyn, w którym przechowywane są dyski z złośliwym oprogramowaniem.",
+      "b": "Odizolowane środowisko do analizy malware bez ryzyka dla systemu.",
+      "c": "Zautomatyzowany system do usuwania złośliwego oprogramowania."
+    },
+    "correct": "b"
+  }
+]
