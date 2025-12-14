@@ -1,27 +1,22 @@
 ﻿from aiogram import Router, F
-from aiogram.types import Message
+from aiogram.types import Message, ReplyKeyboardRemove 
 from aiogram.fsm.context import FSMContext
 
 from app.states.register_states import RegisterStates
-from app.database.requests import create_or_update_user
-from app.keyboards.kb import main_menu
+from app.captcha.generator import generate_captcha
 
 router = Router()
 
+
 @router.message(RegisterStates.waiting_for_number, F.contact)
 async def number_handler(message: Message, state: FSMContext):
-    data = await state.get_data()
-    await create_or_update_user(
-        tg_id=message.from_user.id,
-        first_name=data["first_name"],
-        second_name=data["second_name"],
-        number=message.contact.phone_number
-    )
+    await state.update_data(number=message.contact.phone_number)
+
+    question, _ = generate_captcha(message.from_user.id)
+
     await message.answer(
-        f"Rejestracja zakończona!\n\n"
-        f"Imię: {data['first_name']}\n"
-        f"Nazwisko: {data['second_name']}\n"
-        f"Numer: {message.contact.phone_number}",
-        reply_markup=main_menu
+        question,
+        reply_markup=ReplyKeyboardRemove()
     )
-    await state.clear()
+
+    await state.set_state(RegisterStates.waiting_for_captcha)
