@@ -3,16 +3,18 @@ import os
 from dotenv import load_dotenv
 
 from aiogram import Bot, Dispatcher
+from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 
 
 from app import router  #handlers
 from app.database.models import init_db #bd
-from app.middleware.antispam import RegistrationAntiSpamMiddleware
+from app.middleware.antispam import RegistrationAntiSpamMiddleware 
 
 # .env
 load_dotenv()
+
 
 async def main() -> None:
     bot_token = os.getenv("BOT_TOKEN")
@@ -27,13 +29,12 @@ async def main() -> None:
     dp = Dispatcher()
 
     #middleware
-    dp.message.outer_middleware(RegistrationAntiSpamMiddleware(limit=5, period=3600))
-
+    dp.message.middleware(RegistrationAntiSpamMiddleware(limit=5, period=3600))
     #router
     dp.include_router(router)
 
     await init_db()
-    print("Data baze is ready")
+    print("Database is ready")
 
     print("Bot started!")
     await dp.start_polling(bot)
